@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Projects</title>
+</head>
+<body class="contact-html">
+
+    <!-- Project Container -->
+    <div class="about-container">
+
+        <!-- Navigation -->
+        <div class="about-menu-icon">
+            <div class="line line 1"></div>
+            <div class="line line 2"></div>
+        </div>
+        <nav class="navigation">
+            <div class="section-border"></div>
+            <div class="nav-items">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../apps/projects.html">Projects</a>
+                <!-- <a href="#">Pricing</a> -->
+                <!-- <a href="#">Contact</a> -->
+            </div>
+        </nav>
+        <!-- End of Navigation -->
+
+        <!-- Landing -->
+        <section class="landing">
+
+        <div class="contact-landing">
+            
+            <h1>Contact Us</h1>
+            <p>
+                Fill out the form below or reach out to us on social media for any questions or inquiries.
+            </p>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input placeholder="Name" type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input placeholder="Email" type="email" id="email" name="email" required />
+                
+                <label for="subject">Subject:</label>
+                <input placeholder="Subject" type="text" id="subject" name="subject" required />
+                
+                <label for="message">Message:</label>
+                <textarea placeholder="Message" id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            
+                <div class="social-media">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+            
+
+        </div>
+
+            </section>
+    </div>
+    <!-- End of Project Container -->
+    
+
+    <script src="../contact/contact.js"></script>
+</body>
+</html>
