@@ -20,7 +20,7 @@ html, .projects-html, .about-html {
 } */
 
 .landing {
-    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./desktop.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./images/desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -31,7 +31,7 @@ html, .projects-html, .about-html {
 } 
 
 .skills {
-    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./skills.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./images/skills.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -42,7 +42,7 @@ html, .projects-html, .about-html {
 }
 
 .projects {
-    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./projects.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./images/projects.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -53,7 +53,7 @@ html, .projects-html, .about-html {
   }
 
   .aboutPage {
-      background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./about2.jpg);
+      background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./images/about2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -64,7 +64,7 @@ html, .projects-html, .about-html {
 }
 
 .contact {
-    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./about.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./images/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
