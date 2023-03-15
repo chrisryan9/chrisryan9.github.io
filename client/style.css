@@ -12,24 +12,67 @@ html, .projects-html, .about-html {
     font-size: 62.5%;
 }
 
-.index-html {
+/* .index-html {
     background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-}
+} */
 
-.projects-html, .contact-html {
-    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./projects.jpg);
-    background-size: cover;
+.landing {
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./desktop.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 9.3rem 0;
+    text-align: center;
+} 
+
+.skills {
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./skills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 6rem 0 4rem 0;
+    text-align: center;
 }
 
-.about-html{
-    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./about2.jpg);
-    background-size: cover;
+.projects {
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./projects.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 9rem 0;
+    text-align: center;
+  }
+
+  .aboutPage {
+      background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./about2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 9rem 0;
+    text-align: center;
+}
+
+.contact {
+    background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 9rem 0;
+    text-align: center;
+    overflow: hidden;
 }
 
 /* End of Default Styles */
@@ -42,83 +85,65 @@ html, .projects-html, .about-html {
 /* End of Container */
 
 /* Navigation */
-.menu-icon, .about-menu-icon {
-    width: 3rem;
-    height: 3rem;
-    position: fixed;
-    top: 5rem;
-    right: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    cursor: pointer;
-    z-index: 200;
-}
-
-.line {
-    width: 3rem;
-    height: .2rem;
-    background-color: #eee;
-}
-
 .navigation {
-    position: fixed;
-    top: -8rem;
-    right: -63rem;
-    width: 50rem;
-    height: 100vh;
-    background-color: #31363d;
-    z-index: 100;
     display: flex;
-    align-items: center;
-    padding-left: 8rem;
-    transform: rotateZ(-15deg);
-    transition: all 0.4s;
-}
-
-.change .navigation {
+    justify-content: flex-end;
+    position: fixed;
     top: 0;
-    right: 0;
-    transform: rotateZ(0);
+    width: 100%;
+    height: 6rem;
+    z-index: 9999;
 }
 
-.navigation .section-border {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.change .navigation .section-border {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.5s 0.5s;
-}
+.nav-bg {
+    background-color: #333;
+  }
+  
 
 .nav-items {
     display: flex;
-    flex-direction: column;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.change .nav-items {
-    opacity: 1;
-    visibility: visible;
-    transition: all .5s .5s; 
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 100%;
 }
 
 .nav-items a {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .2rem;
     color: #eee;
-    margin: 1rem 0;
+    margin: 1rem 3.5rem 1rem 0;
 }
 
 .nav-items a:hover{
     color: #29a587;
 }
+
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #29a587;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000;
+  }
+
+  #scroll-to-top:hover {
+    background-color: #eee;
+  }
+
+  #scroll-to-top svg {
+    display: block;
+    margin: auto;
+  }
+  
 /* End of Navigation */
 
 /* Landing */
@@ -240,7 +265,7 @@ html, .projects-html, .about-html {
     width: 60rem;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.5rem;
-    line-height: 1;
+    line-height: 1.2;
     color: #fff;
     margin-bottom: 5rem;
 }
@@ -250,7 +275,7 @@ html, .projects-html, .about-html {
 }
 
 .social-media i {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #fff;
     margin-right: 2rem;
     text-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
@@ -258,6 +283,84 @@ html, .projects-html, .about-html {
 }
 /* End of Landing */
 
+/* Skills */
+
+.skills {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-heading {
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.sub-heading {
+    font-size: 3rem;
+    color: #29a587;
+    text-transform: uppercase;
+}
+
+.sub-heading span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.skills .section-border {
+    position: absolute;
+    left: 20rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.skills-cards {
+    width: 140rem;
+    margin: 8rem 0 0 10rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-card {
+    width: 40rem;
+    height: 18rem;
+    margin: 3rem;
+    padding: 0 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.skill span {
+    display: flex;
+    font-size: 2rem;
+    color: #eee;
+}
+
+.skills-card p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #bbb;
+    margin-bottom: 4rem;
+}
+
+/* End of Skills */
 
 
 /* **************** Projects *************** */
@@ -277,24 +380,99 @@ html, .projects-html, .about-html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    text-decoration: none;
+  }
+  
+  .projectLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3rem;
+    height: 55rem;
+    width: 60rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #29a587;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .projectLink h2 {
     font-size: 3rem;
-}
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
 
-#digitalClockLink {
+  .clockApp {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 28rem;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .clockApp img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 28rem;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #digitalClockLink {
     padding: 0.75rem;
     border: 0.2rem solid #29a587;
     color: #fff;
-    margin-right: 5rem;
-    border-radius: 0.85rem;
+    border-radius: 0.65rem;
+    font-size: 1.75rem;
+    margin-bottom: .75rem;
 }
 
-#RockVolleyballLink {
+  #RockVolleyballLink {
     padding: 0.75rem;
     border: 0.2rem solid #29a587;
     color: #fff;
-    border-radius: 0.85rem;
+    border-radius: 0.65rem;
+    font-size: 1.75rem;
+    margin-bottom: .75rem;
 }
+
+  #digitalClockLink:hover, #RockVolleyballLink:hover {
+    cursor: pointer;
+    background-color: #29a587;
+    transition: background-color 0.5s ease-in-out;
+}
+  
+  .repoLink {
+    padding: 0.75rem;
+    border: 0.2rem solid #29a587;
+    color: #fff;
+    border-radius: 0.65rem;
+    font-size: 1.75rem;
+  }
+  
+  .repoLink:hover {
+    cursor: pointer;
+    background-color: #292d34;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+
+/* **************** End of Project *************** */
 
 
 /* **************** About Page *************** */
@@ -306,7 +484,7 @@ html, .projects-html, .about-html {
     text-transform: uppercase;
     color: #bbb;
     letter-spacing: 0.1rem;
-    margin-top: 12rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
   }
   
@@ -332,6 +510,30 @@ html, .projects-html, .about-html {
     margin-bottom: 1.3rem;
   }
 
+  .resume {
+    margin-top: 5rem;
+  }
+
+  .resume a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #292d34;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+  .resume a:hover {
+    background-color: #29a587;
+}
+
+/* **************** End of About *************** */
+
+
 /* **************** Contact Page *************** */
 
 .contact-landing {
@@ -344,15 +546,6 @@ html, .projects-html, .about-html {
     justify-content: center;
     text-align: center;
 }
-
-/* .contact-landing h1 {
-    margin-top: 10rem;
-    font-size: 8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 4rem;
-    color: #bbb;
-} */
 
 .contact-landing p {
     font-size: 2.5rem;
@@ -369,15 +562,6 @@ html, .projects-html, .about-html {
     justify-content: center;
     margin-bottom: 5rem;
 }
-/* 
-.contact-landing label {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 60rem;
-    color: #29a587;
-} */
 
 .contact-landing input[type="text"],
 .contact-landing input[type="email"],
@@ -435,6 +619,4 @@ html, .projects-html, .about-html {
     cursor: pointer;
 }
 
-.contact-landing .social-media a:hover {
-    color: #29a587;
-}
+/* **************** End of Contact *************** */

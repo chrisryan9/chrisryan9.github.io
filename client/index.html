@@ -12,20 +12,23 @@
     <!-- container -->
     <div class="container">
 
+        <button id="scroll-to-top" aria-label="Scroll to top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 5.91l-7.33 7.33 1.41 1.41L12 8.74l5.91 5.91 1.41-1.41L12 5.91z"/>
+            </svg>
+        </button>
+          
+          
+
 
             <!-- Navigation -->
-            <div class="menu-icon">
-                <div class="line line 1"></div>
-                <div class="line line 2"></div>
-            </div>
-            <nav class="navigation">
-                <div class="section-border"></div>
+            <nav class="navigation" id="nav">
                 <div class="nav-items">
-                    <a href="../client/index.html">Home</a>
-                    <a href="../client/about.html">About</a>
-                    <a href="../client/apps/projects.html">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#aboutPage">About</a>
                     <!-- <a href="#">Pricing</a> -->
-                    <a href="../contact/contact.html">Contact</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </nav>
             <!-- End of Navigation -->
@@ -46,15 +49,171 @@
                         <h3 class="greeting">Hello, <span>my name is</span></h3>
                         <h1 class="name"><span>Chris</span> Ryan</h1>
                         <h3 class="prof">Full-Stack Web Developer</h3>
-                        <p class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat aspernatur voluptatibus excepturi tempora rerum dolorem ipsam quisquam provident nihil asperiores unde aliquam itaque et nam, consequatur blanditiis libero veritatis.</p>
+                        <p class="about">I'm a software developer with a strong foundation in programming languages and tools, including JavaScript, HTML, CSS, SQL, and Java. I have a Bachelor of Science in Business Administration from Weber State University, and I'm currently studying Java Software Engineering at Devmountain.</p>
                         <div class="social-media">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
+                            <a href="https://www.linkedin.com/in/chris-ryan-9924831a6/" target="_blank">
+                              <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/chrisryan9" target="_blank">
+                              <i class="fab fa-github"></i>
+                            </a>
+                          </div>                          
                     </div>
                 </div>
             </section>
+            <!-- End of Landing -->
+
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <h1 class="section-bg-heading">My Skills</h1>
+            <h1 class="section-heading">Professional Skills</h1>
+            <h3 class="sub-heading">My <span>Skills</span></h3>
+            <div class="section-border"></div>
+            <div class="skills-cards">
+                <div class="skills-card">
+                    <div class="skill">
+                        <span>HTML</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <div class="skills-card-progress"></div>
+                </div>
+                <div class="skills-card">
+                    <div class="skill">
+                        <span>JavaScript</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <div class="skills-card-progress"></div>
+                </div><div class="skills-card">
+                    <div class="skill">
+                        <span>Node.js</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <div class="skills-card-progress"></div>
+                </div><div class="skills-card">
+                    <div class="skill">
+                        <span>SQL</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <div class="skills-card-progress"></div>
+                </div><div class="skills-card">
+                    <div class="skill">
+                        <span>Java</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <div class="skills-card-progress"></div>
+                </div>
+                <div class="skills-card">
+                    <div class="skill">
+                        <span>Spring</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <div class="skills-card-progress"></div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Skills -->
+
+        <!-- Projects -->
+
+        <section class="projects" id="projects">
+
+            <h1 id="projectsH1" >My Projects</h1>
+
+            <!-- <h1 class="section-bg-heading">Full-Stack Web Developer</h1> -->
+            <div class="logo">
+                <!-- <a href="#"><img src="../logo.png"></a> -->
+                <!-- <span>Web</span>
+                <span>Dev</span> -->
+            </div>
+                
+
+            <div class="projectLinks">
+                <div class="projectLink">
+                    <h2>Digital Clock App</h2>
+                    <div class="clockApp">
+                      <img src="./Clock.JPG" alt="Digital Clock App homepage">
+                    </div>
+                    <a id="digitalClockLink" href="/client/Digital Clock/index.html" target="_blank">Digital Clock App</a>
+                    <a class="repoLink" href="https://github.com/chrisryan9/chrisryan9.github.io/tree/main/client/Digital%20Clock" target="_blank">GitHub Repo</a>
+                </div>
+                  
+                <div class="projectLink">
+                    <h2>Rock Volleyball Website</h2>
+                    <div class="videoWrapper">
+                      <iframe width="500" height="300" src="https://www.youtube.com/embed/5qqLNVLfEbE" title="Rock Volleyball Website" allowfullscreen></iframe>
+                    </div>
+                    <a id="RockVolleyballLink" href="#" target="_blank">Rock Volleyball Website</a>
+                    <a class="repoLink" href="https://github.com/chrisryan9/Capstone-Foundation" target="_blank">GitHub Repo</a>
+                  </div>                  
+              </div>
+              
+
+
+        </section>
+
+        <!-- End of Projects -->
+
+            <!-- About -->
+            <section class="aboutPage" id="aboutPage">
+
+                    <div class="AboutMeSection">
+                        <h3 class="greetingAbout">Hello, my name is <span>Chris Ryan</span></h3>
+                        <p class="aboutMePage">
+                          I'm a software developer with a strong foundation in programming languages and tools, including JavaScript, HTML, CSS, SQL, and Java. I have a Bachelor of Science in Business Administration from Weber State University, and I'm currently studying Java Software Engineering at Devmountain.
+                        </p>
+                        <p class="aboutMePage">
+                          During my time at Devmountain, I gained hands-on experience working as a student Web Developer and Software Engineer, where I learned how to work collaboratively and creatively to deliver high-quality products. I also have experience in customer service, sales, and logistics, which helped me develop my communication and organizational skills.
+                        </p>
+                        <p class="aboutMePage">
+                          Outside of work, I have a passion for golfing, basketball, skiing, and traveling with my fiancee and my dog Jerry. Golfing is a sport that challenges me both mentally and physically, and I enjoy the opportunity to spend time outdoors. Basketball is a great way to blow off steam and stay active, and skiing is one of my favorite winter activities. When I'm not on the court or the slopes, I love to explore new places with my fiancee and our furry companion Jerry.
+                        </p>
+                        <p class="aboutMePage">
+                          With my technical expertise, business acumen, and diverse interests, I'm confident that I can contribute positively to any software development team.
+                        </p>
+                      </div>
+
+                      <div class="resume">
+                        <a href="./Christopher Ryan Resume.pdf">Resume</a>
+                      </div>
+                        
+        
+            </section>
+            <!-- End of About -->
+
+
+            <!-- Landing -->
+            <section class="contact" id="contact">
+
+                <div class="contact-landing">
+                        <p>
+                            If you have any questions or would like a copy of my resume, please feel free to contact me via the form below or on LinkedIn.
+                        </p>
+                    <form action="submit-form.php" method="POST">
+                        <label for="name"></label>
+                        <input placeholder="Name" type="text" id="name" name="name" required />
+        
+                        <label for="email"></label>
+                        <input placeholder="Email" type="email" id="email" name="email" required />
+                        
+                        <label for="subject"></label>
+                        <input placeholder="Subject" type="text" id="subject" name="subject" required />
+                        
+                        <label for="message"></label>
+                        <textarea placeholder="Message" id="message" name="message" required></textarea>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                    
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/chris-ryan-9924831a6/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>  
+                
+                </div>
+            </section>
+            <!-- End of Project Container -->
+
 
     </div>
     <!-- End of Container -->
