@@ -318,16 +318,17 @@ html, .projects-html, .about-html {
 
 .skills .section-border {
     position: absolute;
-    left: 20rem;
+    left: 10rem;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .skills-cards {
     width: 140rem;
-    margin: 8rem 0 0 10rem;
+    margin: 8rem 0 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .skills-card {
@@ -620,3 +621,355 @@ html, .projects-html, .about-html {
 }
 
 /* **************** End of Contact *************** */
+
+
+/* Responsive */
+@media (max-width: 1700px) {
+    html {
+        font-size: 60%;
+    }
+
+    .section-heading {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    html {
+        font-size: 52%;
+    }
+
+    .aboutMePage {
+        font-size: 2.45rem;
+    }
+
+    .resume {
+        height: 10rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 49%;
+    }
+
+    .skills-card p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 45%;
+    }
+
+    .navigation a {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-right: 10rem;
+        padding-top: 2rem;
+      }
+
+    .section-bg-heading {
+        font-size: 10rem;
+    }
+
+    .section-border {
+        left: 4rem;
+    }
+
+    .about {
+        font-size: 3.5rem;
+    }
+
+    .greetingAbout {
+        font-size: 6;
+    }
+
+    .aboutMePage {
+        font-size: 3rem;
+    }
+
+    .skills-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+    .skills-card {
+        width: 45rem;
+        margin: 2.5rem;
+        box-sizing: border-box;
+    }
+
+    .skill span {
+        font-size: 4rem;
+    }
+
+    .skills-card p {
+        font-size: 2.2rem;
+    }
+      
+
+    .section-heading {
+        margin-top: 2rem;
+    }
+
+    .section-bg-heading {
+        margin-bottom: 5rem;
+    }
+
+    .contact-landing p {
+        font-size: 3.5rem;
+        margin-top: -25rem;
+    }
+
+    .contact-landing input[type="text"],
+    .contact-landing input[type="email"],
+    .contact-landing textarea {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        height: 7rem;
+    }
+
+    .contact-landing textarea {
+        height: 30rem;
+    }
+
+    .contact-landing button[type="submit"] {
+        font-size: 3.5rem;
+    }
+
+    .social-media i {
+        font-size: 6.5rem;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 42%;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 42%;
+    }
+}
+
+@media (max-width: 950px) {
+    html {
+        font-size: 40%;
+    }
+
+    #scroll-to-top {
+        width: 60px;
+        height: 60px;
+    }
+
+    #scroll-to-top svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about {
+        font-size: 4rem;
+    }
+
+    .navigation a {
+        font-size: 3.5rem;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-right: 15rem;
+        padding-bottom: 1.75rem;
+    }
+
+    .navigation nav-bg {
+        height: 30rem;
+    }
+
+    .skills {
+        width: 100%;
+        min-height: 180vh;
+        padding: 5rem 0;
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    
+    .skills-cards {
+        width: 140rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-card {
+        width: 80rem;
+        height: 30rem;
+        margin: 3rem 0;
+        padding: 0 3rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .skill {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        min-height: 6rem;
+    }
+    
+    .skill span {
+        font-size: 5rem;
+        color: #29a587;
+    }
+    
+    .skills-card p {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    
+    .skills .section-border {
+        height: 150vh;
+        margin-top: 10rem;
+    }
+
+    #sql {
+        margin-top: 4rem;
+        margin-bottom: -8rem;
+    }
+
+    .projects {
+        height: 110vh;
+    }
+
+    #projectsH1 {
+        font-size: 12rem;
+    }
+
+    .projectLinks {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectLink {
+        margin-bottom: 10rem;
+        height: 57rem;
+    }
+
+    #RockVolleyballLink, .repoLink, #digitalClockLink {
+        font-size: 3rem;
+    }
+
+    .greetingAbout {
+        font-size: 4rem;
+    }
+
+    .aboutMePage {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 28%;
+    }
+
+    .nav-items a {
+        font-size: 5rem;
+    }
+
+    .navigation {
+        padding-bottom: 4.6rem;
+    }
+
+    .navigation nav-bg {
+        height: 50rem;
+    }
+
+    .section-bg-heading {
+        font-size: 9rem;
+    }
+
+    .banner .section-border {
+        height: 125rem;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-right: 27rem;
+        padding-top: 6rem;
+    }
+
+    .navigation nav-bg {
+        height: 30rem;
+    }
+
+    .greeting {
+        font-size: 5rem;
+    }
+
+    .prof {
+        font-size: 3.2rem;
+    }
+
+    .about {
+        font-size: 5.5rem;
+    }
+
+    .developer-info {
+        margin-right: 0;
+    }
+
+    .skills .section-heading {
+        margin-top: 10rem;
+    }
+
+    .sub-heading, .sub-heading span {
+        font-size: 5rem;
+    }
+
+    .skill span {
+        font-size: 6rem;
+    }
+
+    .skills-card p {
+        font-size: 4rem;
+    }
+
+    .skills {
+        height: 20vh;
+    }
+}
+
+/* End of Responsive */

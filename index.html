@@ -64,6 +64,7 @@
 
         <!-- Skills -->
         <section class="skills" id="skills">
+          <div class="skills-container"> 
             <h1 class="section-bg-heading">My Skills</h1>
             <h1 class="section-heading">Professional Skills</h1>
             <h3 class="sub-heading">My <span>Skills</span></h3>
@@ -73,42 +74,46 @@
                     <div class="skill">
                         <span>HTML</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <p>As a web developer, I have extensive experience with HTML and am able to create clean, well-structured code that is both accessible and easy to maintain.</p>
                     <div class="skills-card-progress"></div>
                 </div>
                 <div class="skills-card">
                     <div class="skill">
                         <span>JavaScript</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <p>My expertise in JavaScript allows me to create dynamic and interactive web applications with ease. I am experienced with various JavaScript frameworks and libraries.</p>
                     <div class="skills-card-progress"></div>
-                </div><div class="skills-card">
+                </div>
+                <div class="skills-card">
                     <div class="skill">
                         <span>Node.js</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <p>As a full-stack developer, I have extensive experience with Node.js and am able to build scalable and efficient back-end systems that power web applications. I am proficient in using popular Node.js frameworks such as Express and NestJS.</p>
                     <div class="skills-card-progress"></div>
-                </div><div class="skills-card">
+                </div>
+                <div class="skills-card">
                     <div class="skill">
-                        <span>SQL</span>
+                        <span id="sql">SQL</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <p>My proficiency in SQL allows me to design and maintain well structured databases, write efficient queries, and ensure data integrity.</p>
                     <div class="skills-card-progress"></div>
-                </div><div class="skills-card">
+                </div>
+                <div class="skills-card">
                     <div class="skill">
                         <span>Java</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <p>As a software developer, I am proficient in Java and able to build robust and scalable applications that meet business needs. I am experienced in using popular Java frameworks such as Spring and Hibernate.</p>
                     <div class="skills-card-progress"></div>
                 </div>
                 <div class="skills-card">
                     <div class="skill">
                         <span>Spring</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum unde molestias cumque iusto aliquid!</p>
+                    <p>My proficiency in the Spring framework allows me to create interactive Java applications that are secure, scalable, and maintainable. I am experienced in using various Spring modules, including Spring Boot, Spring Security, and Spring Data.</p>
                     <div class="skills-card-progress"></div>
                 </div>
             </div>
+          </div>   
         </section>
         <!-- End of Skills -->
 
@@ -128,6 +133,15 @@
 
             <div class="projectLinks">
                 <div class="projectLink">
+                    <h2>Rock Volleyball Website</h2>
+                    <div class="videoWrapper">
+                      <iframe width="500" height="300" src="https://www.youtube.com/embed/5qqLNVLfEbE" title="Rock Volleyball Website" allowfullscreen></iframe>
+                    </div>
+                    <a id="RockVolleyballLink" href="#" target="_blank">Rock Volleyball Website</a>
+                    <a class="repoLink" href="https://github.com/chrisryan9/Capstone-Foundation" target="_blank">GitHub Repo</a>
+                  </div>
+                                    
+                <div class="projectLink">
                     <h2>Digital Clock App</h2>
                     <div class="clockApp">
                       <img src="./images/Clock.JPG" alt="Digital Clock App homepage">
@@ -136,14 +150,6 @@
                     <a class="repoLink" href="https://github.com/chrisryan9/chrisryan9.github.io/tree/main/client/Digital%20Clock" target="_blank">GitHub Repo</a>
                 </div>
                   
-                <div class="projectLink">
-                    <h2>Rock Volleyball Website</h2>
-                    <div class="videoWrapper">
-                      <iframe width="500" height="300" src="https://www.youtube.com/embed/5qqLNVLfEbE" title="Rock Volleyball Website" allowfullscreen></iframe>
-                    </div>
-                    <a id="RockVolleyballLink" href="#" target="_blank">Rock Volleyball Website</a>
-                    <a class="repoLink" href="https://github.com/chrisryan9/Capstone-Foundation" target="_blank">GitHub Repo</a>
-                  </div>                  
               </div>
               
 
@@ -187,7 +193,7 @@
                         <p>
                             If you have any questions or would like a copy of my resume, please feel free to contact me via the form below or on LinkedIn.
                         </p>
-                    <form action="submit-form.php" method="POST">
+                    <form class="contactForm" action="submit-form.php" method="POST">
                         <label for="name"></label>
                         <input placeholder="Name" type="text" id="name" name="name" required />
         
