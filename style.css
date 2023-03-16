@@ -350,8 +350,8 @@ html, .projects-html, .about-html {
 
 .skill span {
     display: flex;
-    font-size: 2rem;
-    color: #eee;
+    font-size: 3.5rem;
+    color: #29a587;
 }
 
 .skills-card p {
@@ -649,14 +649,24 @@ html, .projects-html, .about-html {
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1300px), (max-height: 750px) {
     html {
-        font-size: 49%;
+        font-size: 52%;
+    }
+
+    .skills .section-border {
+        margin-left: 25rem;
     }
 
     .skills-card p {
-        font-size: 2rem;
+        font-size: 2.75rem;
     }
+
+    .skills-card {
+        min-height: 35rem;
+        min-width: 35rem;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -754,9 +764,29 @@ html, .projects-html, .about-html {
     
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px), (max-height: 750px) {
     html {
         font-size: 42%;
+    }
+
+    .skills {
+        min-height: 110vh;
+    }
+
+    .skills .section-border {
+        height: 80rem;
+    }
+
+    .aboutPage {
+        min-height: 120vh;
+    }
+
+    .aboutMePage {
+        font-size: 2.65rem;
+    }
+
+    .greetingAbout {
+        font-size: 3rem;
     }
 }
 
@@ -841,7 +871,6 @@ html, .projects-html, .about-html {
     
     .skill span {
         font-size: 5rem;
-        color: #29a587;
     }
     
     .skills-card p {
@@ -972,24 +1001,95 @@ html, .projects-html, .about-html {
     }
 }
 
-@media (max-height: 1000px) {
-    html {
-        font-size: 52%;
-    }
-
-    .aboutMePage {
-        font-size: 2.15rem;
-    }
-
-    .resume {
-        margin-top: 1rem;
-    }
-}
-
-@media (max-width: 400px), (max-height: 850px) {
+@media (max-width: 500px) {
     html {
         font-size: 18%;
     }
+
+    .skills .section-border {
+        margin-left: 10rem;
+        height: 250rem;
+    }
+
+    .skills-card p {
+        font-size: 4.2rem;
+    }
+
+    .skills {
+        min-height: 135vh;
+    }
+
+    .projects {
+        height: 110vh;
+    }
+
+    #projectsH1 {
+        font-size: 12rem;
+    }
+
+    .projectLinks {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectLink {
+        margin-bottom: 10rem;
+        height: 90rem;
+        width: 98rem;
+    }
+
+    #RockVolleyballLink, .repoLink, #digitalClockLink {
+        font-size: 5rem;
+    }
+
+    .greetingAbout {
+        font-size: 6.5rem;
+    }
+
+    .aboutMePage {
+        font-size: 5rem;
+        width: 80vw;
+        margin-top: 5rem;
+    }
+
+    .resume a {
+        font-size: 4.5rem;
+    }
+
+    .aboutPage {
+        min-height: 105vh;
+    }
+
+    .contact-landing {
+        margin-top: -20rem;
+    }
+
+    .contact-landing p {
+        font-size: 5rem;
+    }
+
+    .contact-landing input[type="text"],
+    .contact-landing input[type="email"],
+    .contact-landing textarea {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+        height: 9rem;
+    }
+
+    .contact-landing textarea {
+        height: 35rem;
+    }
+
+    .contact-landing button[type="submit"] {
+        font-size: 5rem;
+    }
+
+    .social-media i {
+        font-size: 8rem;
+    }
+
 }
 
 /* End of Responsive */
