@@ -36,3 +36,24 @@ const scrollToTopButton = document.getElementById('scroll-to-top');
 scrollToTopButton.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.querySelector(".contactForm");
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Display the alert message
+    alert("Your message has been sent. Thank you for contacting me!");
+
+    // Clear the input fields
+    const inputFields = document.querySelectorAll(".contactForm input, .contactForm textarea");
+    for (const field of inputFields) {
+      field.value = "";
+    }
+
+    // TODO: Add your form submission code here (e.g., AJAX, fetch, etc.)
+
+  });
+});
